@@ -2,13 +2,13 @@
 
 A smart air purifier I built with a team of 5 as our 4th-semester mini-project at Ramdeobaba University. It uses an ESP32, PM2.5 and MQ-135 sensors, and adjusts fan speed automatically based on the air quality it reads.
 
-![Smart air purifier — final build](images/01-final-build.png)
+![Smart air purifier — final build](01-final-build.png)
 
 ## What it does
 
 The setup runs three filters in series — a cloth pre-filter, a HEPA filter, and an activated carbon layer. The ESP32 reads PM2.5 and gas levels continuously, calculates AQI, and uses that to control fan speed through an L298N motor driver. An OLED shows current PM2.5 and AQI values in real time.
 
-![OLED showing live AQI readings](images/02-oled-readings.png)
+![OLED showing live AQI readings](02-oled-readings.png)
 
 Live readings during operation — AQI 29 (Good), PM2.5 at 7.1 µg/m³, fan adjusted to 19% based on air quality.
 
@@ -39,18 +39,18 @@ To run it:
 1. Open `src/main.ino` in Arduino IDE
 2. Install the libraries above
 3. Select ESP32 Dev Module as the board
-4. Wire up per the wiring shown in `images/`
+4. Wire up per the wiring shown in the photos
 5. Upload, then open Serial Monitor at 115200 baud
 
 ## Build photos
 
 | | |
 |---|---|
-| ![Internal wiring](images/03-internal-wiring.png) | ![Back view](images/04-back-electronics.png) |
+| ![Internal wiring](03-internal-wiring.png) | ![Back view](04-back-electronics.png) |
 | Internal layout — ESP32, L298N driver, fan, and sensor wiring | Back view showing power supply and electronics |
-| ![Filter stages](images/05-filter-stages.png) | ![Assembly](images/06-assembly-process.png) |
+| ![Filter stages](05-filter-stages.png) | ![Assembly](06-assembly-process.png) |
 | Three-stage filtration: cloth pre-filter → HEPA → carbon | Final assembly on the rooftop |
-| ![Workbench](images/07-workbench-setup.png) | ![Team demo](images/08-team-demo.png) |
+| ![Workbench](07-workbench-setup.png) | ![Team demo](08-team-demo.png) |
 | Build process — testing the electronics before enclosure | Project demonstration in class |
 
 ## What I'd improve
@@ -61,7 +61,7 @@ To run it:
 
 ## Team
 
-Built with 4 teammates under Dr. Alok Kumar Jha. My contribution was mainly on the sensor interfacing, AQI computation logic, and the smoothing/fallback behavior.
+Built with 5 teammates under Dr. Alok Kumar Jha. My contribution was mainly on the sensor interfacing, AQI computation logic, and the smoothing/fallback behavior.
 
 ## License
 
