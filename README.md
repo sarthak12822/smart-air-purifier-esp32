@@ -61,7 +61,7 @@ To run it:
 
 ## Team
 
-Built with 5 teammates under Dr. Alok Kumar Jha. My contribution was mainly on the sensor interfacing, AQI computation logic, and the smoothing/fallback behavior.
+Built with 4 teammates under Dr. Alok Kumar Jha. My contribution was mainly on the sensor interfacing, AQI computation logic, and the smoothing/fallback behavior.
 
 ## License
 
